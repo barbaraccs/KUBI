@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link rel="icon" type="imagem/png" href="imagens/cerebro.png"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css" />
+
+	<script src="../bootstrap/js/jquery-2.2.4.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- barra de navegação superior com cantos retos e sem margens -->
+	  	<nav class="navbar navbar-default navbar-static-top">  
+	      <div class="navbar-header">
+	        
+	          <img src="imagens/cerebro2.jpeg" width="70" height="50" />
+	      </div>
+	      <div class="collapse navbar-collapse" id="navBar">
+	        <!-- menu alinhado à direita com a classe ".padDireita" -->
+	        <ul class="nav navbar-nav ">
+	          <li><a href="projeto.php">Inicio</a></li>
+	          <li><a href="sobre.html">Sobre</a></li>
+	        </ul>
+	      </div>
+	  	</nav>   <!-- fim da barra de navegação superior -->
+<div class="container wrapper">
+	<div class="row">
+			<div class="col-sm-6">
+				<div id="box">
+					<ul class="estilizacao">
+						<li>
+							<img src="imagens/menina.png" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h1>Cadastre-se</h1>
+			</div>
+		</div><!-- fim da div row -->
+	<div class="row">
+		<br>
+		<div class="col-sm-12">
+			<legend>Informe seus Dados Pessoais:</legend>
+
+			<input type="radio" name="grao"  value="inteiro" id="igraoint">
+        	<label for="igraoint">Aluno</label><br>
+        	<input type="radio" name="grao" value="moido" id="igraomoido">
+        	<label for="igraomoido">Professor</label> 
+		</div>
+	</div>
+	<br><br>
+    	<div class="row">
+    		<div class="col-sm-6">
+ 	    	<form method="POST" name="FORMCADASTRO">
+        		<label>Nome Completo:</label><br>
+        		<input type="text" name="nome" id="inome" required size= "40" maxlength placeholder="Digite seu nome" ><br>
+          		<label>Email:</label><br>
+          		<input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/><br>
+         		<label>Telefone:</label><br>
+        		<input type="text" name="telefone" id="itelefone" placeholder="Digite seu telefone"><br><br>
+              	<label>Curso:</label><br>
+              	<input type="text" name="curso" id="icurso" required size= "40" maxlength placeholder="Digite seu curso" ><br>
+              	<label>Turma:</label><br>
+              	<input type="text" name="turma" id="iturma" required size= "40" maxlength placeholder="Digite sua turma" ><br>
+              	<label>Matricula:</label><br>
+              	<input type="text" name="matricula" id="imatricula" required size= "40" maxlength placeholder="Digite sua matricula" ><br><br>
+    		</form> <!-- fim do form dados de envio -->
+    	</div><!-- fim da div col-sm-6 -->
+
+    	<div class="col-sm-6">
+    		<form method="POST" name="FORMCADASTRO">
+        		<label>Usuário:</label><br>	
+          		<input type="text" name="usuario" id="iusuario" placeholder="Digite seu usuário"><br>
+          		<label>Senha:</label><br>
+       			<input type="text" name="senha" id="isenha" placeholder="Digite sua senha"><br>
+          		<label>Confirme sua senha:</label><br>
+          		<input type="text" name="senha" id="isenha" placeholder="Digite sua senha"><br><br>
+        	    <h4>Informe:</h4> 
+        	    <input type="checkbox" name="embalagem" id="iembalagem">
+        	    <label for="icor"> Sou da banca</label><br>
+        	    <input type="checkbox" name="catalogo" id="icatalogo">
+        	    <label for="icatalogo"> Sou orientador</label><br>
+        	    <input type="checkbox" name="catalogo" id="icatalogo">
+        	    <label for="icatalogo"> Nenhuma das alternativas</label> <br><br>   
+        	    <div class="row">
+    				<div class="col-sm-12">
+      					<br>
+      					<input type="submit" value="Enviar">
+   						<input type="reset"  value="Limpar">
+  					</div>
+    			</div>
+    		</form> <!-- fim do form dados de envio -->
+    	</div>
+		</div><!-- fim da div row -->
+  	</div><!-- fim da div container -->
+</body>
+</html>
